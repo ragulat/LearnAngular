@@ -1,0 +1,87 @@
+h1{
+ font-family: krona one;
+font-size: 45px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+h1 {
+  padding: 0 1rem;
+}
+
+h2 {padding: 1rem;}
+
+mat-toolbar{
+  position:fixed;
+  top:0;
+  z-index: 2;
+}
+
+mat-sidenav-container {
+  height:100%;
+
+}
+
+
+mat-sidenav {
+  padding-top: 3.5rem;
+  @media screen and (min-width: 600px) {
+    padding-top: 4rem;
+    background: #D6D8ED;
+  }
+
+  .entry{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding:0.75rem;
+  }
+}
+
+mat-sidenav-content{
+  padding-top: 3.5rem;
+  @media screen and (min-width: 600px) {
+      padding-top: 4rem;
+  }
+}
+button{
+  width: 120px;
+height: 32px;
+font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+/* text-align: left; */
+background: white;
+border-radius: 18px;
+border: 1px;
+
+}
+span{
+  font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+/* a{
+  width: 127px;
+height: 40px;
+
+border-radius: 10px;
+
+} */
+button span{
+  font-size: medium;
+  margin: 15px;
+}
+button span:hover{
+  background-color: rebeccapurple;
+}

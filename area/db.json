@@ -1,0 +1,98 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "body": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "OrganizationName": "ajth",
+      "email": "ajith@gmail.com",
+      "contactno": "8610505861",
+      "OrganizationType": "update",
+      "LicenseTerm": "12",
+      "LicenseExpiry": "2 month",
+      "Status": "Active",
+      "Action": "",
+      "id": "1"
+    },
+    {
+      "id": "1e07",
+      "OrganizationName": "ragul",
+      "email": "ant712lugar@gmail.com",
+      "contactno": "9087896597",
+      "OrganizationType": "arivu",
+      "LicenseTerm": "12 month",
+      "LicenseExpiry": "2/24",
+      "Status": "Active",
+      "Action": ""
+    },
+    {
+      "id": "05fe",
+      "OrganizationName": "praveen",
+      "email": "praveen@gmail.com",
+      "contactno": "2515451",
+      "OrganizationType": "clim",
+      "LicenseTerm": "3 month",
+      "LicenseExpiry": "2",
+      "Status": "Active",
+      "Action": ""
+    },
+    {
+      "id": "aa05",
+      "OrganizationName": "praba",
+      "email": "praba123@gmail.com",
+      "contactno": "9087896597",
+      "OrganizationType": "clim",
+      "LicenseTerm": "one year",
+      "LicenseExpiry": "3 month",
+      "Status": "Active",
+      "Action": ""
+    },
+    {
+      "id": "7030",
+      "OrganizationName": "arun",
+      "email": "arun@gmail.com",
+      "contactno": "7871468393",
+      "OrganizationType": "clim",
+      "LicenseTerm": "2year",
+      "LicenseExpiry": "8 month",
+      "Status": "Suspended",
+      "Action": ""
+    },
+    {
+      "OrganizationName": "ragul",
+      "email": "ragul.ant24@gmail.com",
+      "contactno": "5151",
+      "OrganizationType": "121",
+      "LicenseTerm": "onr",
+      "LicenseExpiry": "4545",
+      "Status": "Active",
+      "Action": "",
+      "id": "0b00"
+    },
+    {
+      "OrganizationName": "praveen",
+      "email": "ragullugar98@gmail.com",
+      "contactno": "6382745994",
+      "OrganizationType": "clim",
+      "LicenseTerm": "12",
+      "LicenseExpiry": "1",
+      "Status": "Active",
+      "Action": "",
+      "id": "a850"
+    }
+  ]
+}

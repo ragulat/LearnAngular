@@ -1,0 +1,105 @@
+<div class="container">
+  <h3 class="sub">Subscription</h3>
+ 
+
+<div class="main-body">
+
+  
+<mat-form-field  appearance="outline">
+ 
+  <!-- <mat-label><mat-icon>search</mat-icon> <b> search...</b></mat-label> -->
+  <input matInput (keyup)="applyFilter($event)"   placeholder="search..">
+   <mat-icon matSuffix>arrow_right_alt</mat-icon>
+
+
+</mat-form-field>
+<div class="operations">
+  <span>All(11)  </span>  
+  <span>New(0)  </span>
+  <span>Active(8)  </span>
+  <span>suspended(2)</span>
+  </div>
+  <button type="button" class="btn btn-outline-danger" (click)="openAddEditEmpForm()">Add New Subscription</button>
+  <button mat-button class="exp">Export</button>
+
+
+  <div class="exmple mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+  
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID</th>
+        <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+      </ng-container>
+  
+      <!-- OrganizationName Column -->
+      <ng-container matColumnDef="OrganizationName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> OrganizationName </th>
+        <td mat-cell *matCellDef="let row"> {{row.OrganizationName}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+        <td mat-cell *matCellDef="let row"> {{row.email}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="contactno">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Contact No </th>
+        <td mat-cell *matCellDef="let row"> {{row.contactno}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="OrganizationType">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> OrganizationType </th>
+        <td mat-cell *matCellDef="let row"> {{row.OrganizationType}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="LicenseTerm">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> LicenseTerm </th>
+        <td mat-cell *matCellDef="let row"> {{row.LicenseTerm}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="LicenseExpiry">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> LicenseExpiry </th>
+        <td mat-cell *matCellDef="let row"> {{row.LicenseExpiry}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Status">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+        <td mat-cell *matCellDef="let row"> {{row.Status}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Action">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+        <td mat-cell *matCellDef="let row"> 
+          <button mat-icon-button color="primary" (click)="openEditForm(row)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <!-- <button mat-icon-button color="warn" (click)="deleteEmployee(row.id)">
+            <mat-icon>delete</mat-icon>
+          </button> -->
+        </td>
+      </ng-container>
+
+
+
+
+      
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+      </tr>
+
+      <!-- <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+      </tr> -->
+     
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 25]" showFirstLastButtons></mat-paginator>
+ 
+  </div>
+  </div>
+</div>
+
+
+
+ 

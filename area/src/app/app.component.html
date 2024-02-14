@@ -1,0 +1,91 @@
+ <div style="width: 100%; height: 100%; position: relative; background: #D6D8ED">
+  <div style="left: 1087px; top: 36.27px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word" class="bn"><button mat-button> English</button></div>
+  <div class="bn" style="left: 1250px; top: 36.27px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+    <button mat-button> <mat-icon>settings</mat-icon> Settings</button>
+  </div>
+  <div style="width: 266px; height: 111px; left: 6px; top: 12.27px; position: absolute; background: linear-gradient(113deg, #DBDBEF 0%, rgba(219, 219, 239, 0) 100%); border-top-left-radius: 30px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 30px"></div>
+  <div style="width: 86.10px; height: 86.10px; left: 91.06px; top: 11px; position: absolute; transform: rotate(69.79deg); transform-origin: 0 0; background: #7691F9; border-radius: 9999px"></div>
+  <img style="width: 76px; height: 76px; left: 27px; top: 27.27px; position: absolute; background: linear-gradient(0deg, #FFFBFB 0%, #FFFBFB 100%); border-radius: 9999px" src="assets/Ellipse 64.png" />
+  <div style="width: 144px; height: 35px; left: 120px; top: 29.27px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-weight: 700; word-wrap: break-word">Smith</div>
+  <div style="width: 92px; height: 22px; left: 120px; top: 61.27px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word">Admin</div>
+  
+  <div style="left: 393px; top: 40.27px; position: absolute; color: black; font-size: 36px; font-family: Krona One; font-weight: 400; word-wrap: break-word"><h1>ANT Technology</h1>
+  </div>
+  <img style="width: 102.04px; height: 100px; left: 267px; top: 14.27px; position: absolute" src="assets/logo 1 1.png" />
+ 
+  <div style="left: 5px; top: 137px; position: absolute; width: calc(100%); height: 1000px; align-items: center; ">
+   
+   
+    <!-- <button mat-icon-button aria-label="Menu icon" (click)="toggleMenu()"> -->
+      <mat-icon (click)="toggleMenu()">menu</mat-icon>
+    <!-- </button> -->
+        <mat-sidenav-container autosize>
+          <mat-sidenav [mode]="isMobile ? 'over' : 'side'" [opened]="isMobile ? 'false' : 'true'">
+            <mat-nav-list>
+              <!-- <button mat-button> -->
+                <a mat-list-item [routerLink]="['home']">
+                  <span class="entry">
+                     <mat-icon>house</mat-icon>
+                     <span *ngIf="!isCollapsed">Home</span>
+                  </span>
+               </a>
+              <!-- </button> -->
+            </mat-nav-list>
+            <mat-nav-list>
+              
+                <a mat-list-item>
+                  <span class="entry">
+                     <mat-icon>messages</mat-icon>
+                     <span *ngIf="!isCollapsed">messages</span>
+                  </span>
+               </a>
+             
+            </mat-nav-list>
+            <mat-nav-list>
+            
+              <a mat-list-item>
+                <span class="entry">
+                  <mat-icon>event</mat-icon>
+                   <span *ngIf="!isCollapsed">Event</span>
+                </span>
+             </a>
+           
+            </mat-nav-list>
+            <mat-nav-list>
+              
+              <a mat-list-item>
+                <span class="entry">
+                   <mat-icon>Tasks</mat-icon>
+                   <span *ngIf="!isCollapsed">Tasks</span>
+                </span>
+             </a>
+           
+          </mat-nav-list>
+          <mat-nav-list>
+              
+            <a mat-list-item>
+              <span class="entry">
+                <mat-icon>whatshot</mat-icon>
+                 <span *ngIf="!isCollapsed">Analytics</span>
+              </span>
+           </a>
+         
+        </mat-nav-list>
+                 </mat-sidenav>
+          <mat-sidenav-content>
+            <router-outlet></router-outlet>
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+           
+</div>
+
+
+
+
+
+ 
+
+
+
+
+ 
